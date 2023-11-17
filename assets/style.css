@@ -1,71 +1,81 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial;
-    margin: 0;
-  }
-  
-  header {
-    padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
-  }
-  
-  nav {
-    display: flex;
-    background-color: #d8a47f;
-    justify-content: right;
-  }
-  
-  
-  nav a {
-    color: #13293d;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-    float: right;
-    justify-content: center;
-  }
-
-/* aside{
-    height: 200px;
-} */
-
-  .aboutme, img {
-    display: flex;
-    /* display: inline-block; */
-    flex-wrap: wrap;
-    flex-direction: row;
-    /* width: 20%; */
-    padding: auto;
-    padding-left: 15px;
-    margin-left: 15px;
-    font-style: italic;
-    background-color: lightgray;
-   
-}
-section{
-    display: flex;
-    flex-direction: column;
-}
-img{
-    display:flex;
-    width: 100px;
-    height: 100px;
+html {
+  height: 100%;
 }
 
-content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Ubuntu;
+  background: linear-gradient(#b3ffab, #67fffc);
+}
+a{
+  padding: 5px;
+  text-decoration: none;
+  
+}
+.nav{
+  display: flex;
+  justify-content: right;
+  margin: 5px;
 }
 
-  @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-  }
+header {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#444444, #333333);
+  color: #bbbbbb;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: left;
+
+}
+img { 
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 50%;
+  margin: 40px;
+}
+h2{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center
+  
+}
+
+.child {
+  display: flex;
+  flex: 1 0 21%;
+  margin: 5px;
+  background-color: blue;
+  height: 300px;
+}
+
+#page {
+  display: flex;
+}
+
+#sideBar {
+  min-width: 20%;
+  max-width: 20%;
+  background: red;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: blue;
+}
