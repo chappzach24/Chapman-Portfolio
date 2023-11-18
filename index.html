@@ -1,95 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Selectors with CSS</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advanced Selectors with CSS</title>
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
-
-<body>
-     
+  <body>
     <header>
-        <div class="container container-nav">
-          <div class="titles">
-            <h1>Zachary Chapman</h1>
-          </div>
-          <nav>
-            <ul>
-              <li><a style="text-decoration: none" href="#aboutme">About Me</a></li>
-              <li><a style="text-decoration: none" href="#mywork">My Work</a></li>
-              <li><a style="text-decoration: none" href="#contactme">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <div class="titles">
+        <h1>Zachary Chapman</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a style="text-decoration: none" href="#aboutme">About Me</a>
+          </li>
+          <li>
+            <a style="text-decoration: none" href="#mywork">My Work</a>
+          </li>
+          <li>
+            <a style="text-decoration: none" href="#contactme">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section class="aboutme">
-      <article>
+    <main>
+      <section class="aboutme">
         <h2 id="aboutme">ABOUT ME</h2>
-        <div>
-          <ul>
-            <img class="baby_pic" src="assets/Images/baby_pic.jpg"  title="Family Picture" alt="Picture of Zachary and kenzie Chapman holding their first child at the hospital">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maiores nobis animi id voluptatum consectetur nemo optio nulla error ipsa necessitatibus, dolores voluptas quis incidunt vitae! Cupiditate libero ducimus alias.</p>
-            
-        </ul>   
-        
+        <div class="description">
+          <img
+            class="baby_pic"
+            src="assets/Images/baby_pic.jpg"
+            title="Family Picture"
+            alt="Picture of Zachary and kenzie Chapman holding their first child at the hospital"
+          />
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              maiores nobis animi id voluptatum consectetur nemo optio nulla
+              error ipsa necessitatibus, dolores voluptas quis incidunt vitae!
+              Cupiditate libero ducimus alias.
+            </p>
+          </article>
         </div>
-      </article>
-    </section>
+      </section>
 
-    <section class="aboutme">
-        <article>
-            <h2 id="mywork">My Work</h2>
-                <div>
-                     <ul>
-                         <a class="horiseon-refactor" href="https://chappzach24.github.io/Horiseon-refactor/">
-                            <img class="baby_pic" src="assets/Images/Horiseon-ScreenShot (1).png" title="Horiseon-Refactor challenge" alt="Picture of Zachary and kenzie Chapman holding their first child at the hospital">
-                        </a>
-                        <p>This project was given with motivation to refactor a website that aides accessibility. The goal was to contribute to a more inclusive web environment by ensuring usability for individuals with diverse needs. The project addresses the common issue of exclusionary web design by adhering to accessibility standards. In the development process we emphasized the importance of writing "DRY" (Don't Repeat Yourself) code, promoting efficiency and maintainability.Through this process, valuable insights were gained into the technical and impactful aspects of web accessibility, emphasizing its fundamental role in user-centric development.</p>
-                    </ul> 
-                </div>
-        </article>
-    </section>
+      <section class="work" id="mywork">
+        <h2>My Work</h2>
+        <div class="projects">
+          <section>
+            <a
+              class="horiseon-refactor"
+              target="_blank"
+              href="https://chappzach24.github.io/Horiseon-refactor/"
+            >
+              <img
+                src="assets/Images/Horiseon-ScreenShot (1).png"
+                title="Horiseon-Refactor challenge"
+                alt="Picture of Zachary and kenzie Chapman holding their first child at the hospital"
+              />
+            </a>
+            <p>
+              This project was given with motivation to refactor a website that
+              aides accessibility. The goal was to contribute to a more
+              inclusive web environment by ensuring usability for individuals
+              with diverse needs. The project addresses the common issue of
+              exclusionary web design by adhering to accessibility standards. In
+              the development process we emphasized the importance of writing
+              "DRY" (Don't Repeat Yourself) code, promoting efficiency and
+              maintainability.Through this process, valuable insights were
+              gained into the technical and impactful aspects of web
+              accessibility, emphasizing its fundamental role in user-centric
+              development.
+            </p>
+          </section>
+          <section>
+            <a
+              class="prework"
+              target="_blank"
+              href="https://chappzach24.github.io/prework-study-guide/"
+            >
+              <img
+                src="assets/Images/prework.png"
+                title="OSU-prework-study-guide"
+                alt="Picture of website that was out prework for OSU boot camp"
+              />
+            </a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              maiores nobis animi id voluptatum consectetur nemo optio nulla
+              error ipsa necessitatibus, dolores voluptas quis incidunt vitae!
+              Cupiditate libero ducimus alias.
+            </p>
+          </section>
+        </div>
+      </section>
 
-    <section class="aboutme">
-        <article>
-          <!-- <h2 id="mywork">My Work</h2> -->
-          <div>
-            <ul>
-                <a class="prework" href="https://chappzach24.github.io/prework-study-guide/">
-                    <img class="baby_pic" src="assets/Images/prework.png" title="OSU-prework-study-guide" alt="Picture of website that was out prework for OSU boot camp">
-                </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maiores nobis animi id voluptatum consectetur nemo optio nulla error ipsa necessitatibus, dolores voluptas quis incidunt vitae! Cupiditate libero ducimus alias.</p>
-              
-          </ul>   
-          
+      <section class="contact">
+        <h2 id="contactme">Contact Me</h2>
+        <div>
+          <div class="columns">
+            <div class="icons">
+            <p>Email</p>
+            <a href="mailto:zach.chapman24@gmail.com"> 
+              <img src="assets/Images/Email-red.jpg" alt="Red email logo">
+            </a>
+            </div>
+
+            <div class="icons">
+              <p>GitHub</p>
+              <a href="https://github.com/chappzach24" target="_blank">
+                <img
+                  class="githubimg"
+                  src="assets/Images/github.png"
+                  alt="GitHub logo"
+                  
+                />
+              </a>
+            </div>
           </div>
-        </article>
-    </section>
+        </div>
+      </section>
+    </main>
 
-    <section class="contact">
-        <article>
-            <h2 id="contactme">Contact Me</h2>
-                <div>
-                    <ul>
-                    </ul>   
-                </div>
-        </article>
-    </section>
-        
-
-    
-
-   
-
-  </main>
-
-  <footer>
-
-  </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
