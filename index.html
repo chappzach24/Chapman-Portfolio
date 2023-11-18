@@ -1,41 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Selectors with CSS</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
-    <nav class="nav">
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contect</a>
-    </nav>
+     
     <header>
-        <h1>Zachary Chapman</h1>
-    </header>
+        <div class="container container-nav">
+          <div class="titles">
+            <h1>Zachary Chapman</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#aboutme">About Me</a></li>
+              <li><a href="#mywork">My Work</a></li>
+              <li><a href="#contactme">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <div class="parent">
-        <div class="child"> <img src="assets/Images/baby_pic.jpg" alt="">
-            <h2>About </h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium impedit repellat sunt eaque iure quo facere voluptate ipsum excepturi id. Maxime quisquam labore accusamus quidem aut veniam earum optio dolores.</p>
-        </div>
-      </div>
-    <div class="parent">
-        <div class="child">
-            <h2>My work</h2>
-        </div>
+  <main>
+    <section class="aboutme">
+      <article>
+        <h2 id="aboutme">ABOUT ME</h2>
+        <div>
+          <ul>
+            <img class="baby_pic" src="assets/Images/baby_pic.jpg" alt="Picture of Zachary and kenzie Chapman holding their first child at the hospital">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maiores nobis animi id voluptatum consectetur nemo optio nulla error ipsa necessitatibus, dolores voluptas quis incidunt vitae! Cupiditate libero ducimus alias.</p>
+            
+        </ul>   
         
-    </div>
-    <div class="parent">
-        <div class="child">
-            <h2>My Contact</h2>
         </div>
-    </div>
-      
-    
+      </article>
+    </section>
+
+    <section class="aboutme">
+        <article>
+            <h2 id="mywork">My Work</h2>
+                <div>
+                     <ul>
+                         <a class="horiseon-refactor" href="https://chappzach24.github.io/Horiseon-refactor/">
+                            <img class="baby_pic" src="assets/Images/Horiseon-ScreenShot (1).png" alt="Picture of Zachary and kenzie Chapman holding their first child at the hospital">
+                        </a>
+                        <p>This project was given with motivation to refactor a website that aides accessibility. The goal was to contribute to a more inclusive web environment by ensuring usability for individuals with diverse needs. The project addresses the common issue of exclusionary web design by adhering to accessibility standards. In the development process we emphasized the importance of writing "DRY" (Don't Repeat Yourself) code, promoting efficiency and maintainability.Through this process, valuable insights were gained into the technical and impactful aspects of web accessibility, emphasizing its fundamental role in user-centric development.</p>
+                    </ul> 
+                </div>
+        </article>
+    </section>
+
+    <section class="aboutme">
+        <article>
+          <!-- <h2 id="mywork">My Work</h2> -->
+          <div>
+            <ul>
+                <a class="prework" href="https://chappzach24.github.io/prework-study-guide/">
+                    <img class="baby_pic" src="assets/Images/prework.png" alt="Picture of website that was out prework for OSU boot camp">
+                </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maiores nobis animi id voluptatum consectetur nemo optio nulla error ipsa necessitatibus, dolores voluptas quis incidunt vitae! Cupiditate libero ducimus alias.</p>
+              
+          </ul>   
+          
+          </div>
+        </article>
+    </section>
+
+    <section class="contact">
+        <article>
+            <h2 id="contactme">Contact Me</h2>
+                <div>
+                    <ul>
+                    </ul>   
+                </div>
+        </article>
+    </section>
+        
 
     
+
+   
+
+  </main>
+
+  <footer>
+
+  </footer>
 </body>
+
 </html>
