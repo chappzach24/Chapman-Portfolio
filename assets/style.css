@@ -52,6 +52,7 @@ margin-right: auto;
 }
 p{
   font-size: 25px;
+  padding: 1rem;
 }
 
 section{
@@ -72,12 +73,17 @@ section div{
 
 .description{
   display: flex;
+
 }
 
 .description img {
-  height: auto;
-  width: 20%;
-  margin: 1rem;
+  display: flex;
+  width: 100%;
+  max-width: 300px; /*actual image width*/
+  height: auto; /* maintain aspect ratio*/
+  margin: auto; /*optional centering of image*/
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 /* Work section styling */
@@ -93,6 +99,13 @@ padding: 40px;
 
 .projects section img{
   width: 100%;
+}
+.projects section div img{
+  width: 100%;
+}
+.projects section div {
+  width: 100%;
+  flex: 0 0 100%;
 }
 .projects section a{
   flex: 0 0 50%;
