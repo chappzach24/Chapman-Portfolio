@@ -68,7 +68,7 @@ section h2 {
 }
 
 section div{
-  flex: 0 0 75%;
+  flex: 0 0 70%;
 }
 
 .description{
@@ -77,13 +77,11 @@ section div{
 }
 
 .description img {
-  display: flex;
+  padding: 1rem;
   width: 100%;
-  max-width: 300px; /*actual image width*/
-  height: auto; /* maintain aspect ratio*/
-  margin: auto; /*optional centering of image*/
-  overflow-clip-margin: content-box;
-  overflow: clip;
+  max-width: 300px; 
+  height: auto; 
+  margin: auto; 
 }
 
 /* Work section styling */
@@ -108,13 +106,12 @@ padding: 40px;
   flex: 0 0 100%;
 }
 .projects section a{
-  flex: 0 0 50%;
+  flex: 0 0 80%;
 }
 .projects section p {
   flex: 0 0 50%;
   padding: 20px;
 }
-
 /* end work section styling */
 
 /* contact section */
