@@ -78,8 +78,8 @@ section div{
 
 .description img {
   padding: 1rem;
-  width: 100%;
-  max-width: 300px; 
+ 
+  max-width: 45%; 
   height: auto; 
   margin: auto; 
 }
