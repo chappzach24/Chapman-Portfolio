@@ -144,12 +144,13 @@ padding: 20px;
 } 
 
 
-/* End contact section
+/* End contact section*/
 
 
-*/
-
-
-
+@media screen and (max-width: 900px) {
+  .aboutme, .description, .work, .projects, .contact{
+    flex-direction: column;
+  }
+}
 
 
