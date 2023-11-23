@@ -6,7 +6,7 @@ This project was given with motivation to create a portfolio to showcase our wor
 
 To view project [Horiseon](https://chappzach24.github.io/Chapman-Portfolio/)
 
-
+![alt text](https://github.com/chappzach24/Chapman-Portfolio/blob/main/assets/Images/family.png)
 
 To set up and run this project in your development environment, follow these step-by-step instructions:
 
