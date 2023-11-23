@@ -1,6 +1,5 @@
-*{
+* {
   box-sizing: border-box;
-
 }
 
 body {
@@ -14,90 +13,109 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FE5D26;
-  color: #FAEDCA;
+  background-color: #fe5d26;
+  color: #faedca;
   padding: 8px 20px;
 }
 
-h1{
+h1 {
   font-size: 6.5rem;
   margin: 0;
   padding-left: 40px;
+  text-align: center;
 }
-a{
-color: #FAEDCA;
+a {
+  color: #faedca;
 }
 
 header nav ul {
   display: flex;
   list-style: none;
   font-size: x-large;
-  
 }
 
 header nav ul li {
-  margin-right: 10px;
+  margin: 5px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
   color: aquamarine;
 }
 
-main{
-max-width: 88%;
-margin-top: 20px;
-margin-bottom: 30px;
-margin-left: auto;
-margin-right: auto;
+main {
+  max-width: 88%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
-p{
+p {
   font-size: 25px;
   padding: 1rem;
 }
 
-section{
+section {
   display: flex;
   justify-content: space-between;
 }
 
 section h2 {
-  background-color: #FE5D26;
+  background-color: #fe5d26;
   text-align: center;
   font-size: 3rem;
   flex: 0 0 20%;
 }
 
-section div{
+section div {
   flex: 0 0 70%;
 }
 
-.description{
+.description {
   display: flex;
-
 }
 
 .description img {
   padding: 1rem;
- 
-  max-width: 45%; 
-  height: auto; 
-  margin: auto; 
+
+  max-width: 45%;
+  height: auto;
+  margin: auto;
 }
 
 /* Work section styling */
 
-
 .projects {
-display: flex;
-flex: 0 0 85%;
-flex-wrap: wrap;
-padding: 40px;
+  display: flex;
+  /* flex: 0 0 85%; */
+  flex-wrap: wrap;
+  padding: 40px;
 }
 
+.project {
+  min-height: 420px;
+  max-height: 420px;
+  flex-basis: calc(50% - 1rem);
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.project p {
+  font-size: 15px;
+  padding: 8px;
+  background-color: aquamarine;
+}
 
-.projects section img{
+.prework {
+  flex-basis: 100%;
+}
+
+.projects section a {
+ height: 200px;
+}
+.projects section a img {
   width: 100%;
 }
+/* 
 .projects section div img{
   width: 100%;
 }
@@ -111,46 +129,49 @@ padding: 40px;
 .projects section p {
   flex: 0 0 50%;
   padding: 20px;
-}
+} */
 /* end work section styling */
 
 /* contact section */
 
 .columns {
-display: flex;
-flex-wrap: inline;
-flex-direction:row;
-flex: 0 0 45%;
-align-items: center;
-padding: 20px;
-
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 
-.columns section img{
+.columns section img {
   width: 50%;
 }
-.columns section a{
+.columns section a {
   flex: 0 0 50%;
 }
 
-.icons{
+.icons {
   text-align: center;
   flex: 0 0 50%;
 }
 
-.icons img{
+.icons img {
   width: 100px;
-
-} 
-
+}
 
 /* End contact section*/
 
-
 @media screen and (max-width: 900px) {
-  .aboutme, .description, .work, .projects, .contact, .titles, nav, ul, li, header{
+  .aboutme,
+  .description,
+  .work,
+  .projects,
+  .contact,
+  .titles,
+  nav,
+  ul,
+  li,
+  header {
     flex-direction: column;
   }
+  .project{
+    min-height: 200px;
+  }
 }
-
-
