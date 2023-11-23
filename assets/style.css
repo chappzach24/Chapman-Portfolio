@@ -148,7 +148,7 @@ padding: 20px;
 
 
 @media screen and (max-width: 900px) {
-  .aboutme, .description, .work, .projects, .contact{
+  .aboutme, .description, .work, .projects, .contact, .titles, nav, ul, li, header{
     flex-direction: column;
   }
 }
