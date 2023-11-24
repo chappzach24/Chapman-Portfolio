@@ -150,6 +150,12 @@ section div {
 
 /* End contact section*/
 
+footer{
+  text-align: center;
+  background-color: #fe5d26;
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 900px) {
   .aboutme,
   .description,
